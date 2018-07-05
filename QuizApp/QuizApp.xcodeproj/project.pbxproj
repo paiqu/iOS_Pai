@@ -7,33 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E1D913F20EB4448006F473D /* coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D913E20EB4448006F473D /* coin.mp3 */; };
-		2E1D914120EB4CCD006F473D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D914020EB4CCD006F473D /* HomeViewController.swift */; };
-		2E1D914320EB5D54006F473D /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D914220EB5D54006F473D /* click.mp3 */; };
-		2E9F489720E9CF4400057A30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F489620E9CF4400057A30 /* AppDelegate.swift */; };
-		2E9F489920E9CF4400057A30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F489820E9CF4400057A30 /* ViewController.swift */; };
-		2E9F489C20E9CF4400057A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F489A20E9CF4400057A30 /* Main.storyboard */; };
-		2E9F489E20E9CF4500057A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F489D20E9CF4500057A30 /* Assets.xcassets */; };
-		2E9F48A120E9CF4500057A30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F489F20E9CF4500057A30 /* LaunchScreen.storyboard */; };
-		2E9F48A920E9FEEE00057A30 /* victoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F48A820E9FEEE00057A30 /* victoryViewController.swift */; };
+		2E117ECB20EC623300C07828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E117ECA20EC623300C07828 /* AppDelegate.swift */; };
+		2E117ECD20EC623300C07828 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E117ECC20EC623300C07828 /* ViewController.swift */; };
+		2E117ED020EC623300C07828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E117ECE20EC623300C07828 /* Main.storyboard */; };
+		2E117ED220EC623400C07828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E117ED120EC623400C07828 /* Assets.xcassets */; };
+		2E117ED520EC623400C07828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E117ED320EC623400C07828 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E1D913E20EB4448006F473D /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin.mp3; sourceTree = "<group>"; };
-		2E1D914020EB4CCD006F473D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		2E1D914220EB5D54006F473D /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
-		2E9F489320E9CF4400057A30 /* Tap App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E9F489620E9CF4400057A30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E9F489820E9CF4400057A30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2E9F489B20E9CF4400057A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2E9F489D20E9CF4500057A30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2E9F48A020E9CF4500057A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2E9F48A220E9CF4500057A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E9F48A820E9FEEE00057A30 /* victoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = victoryViewController.swift; sourceTree = "<group>"; };
+		2E117EC720EC623300C07828 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E117ECA20EC623300C07828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E117ECC20EC623300C07828 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E117ECF20EC623300C07828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E117ED120EC623400C07828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E117ED420EC623400C07828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E117ED620EC623400C07828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2E9F489020E9CF4400057A30 /* Frameworks */ = {
+		2E117EC420EC623200C07828 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,75 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E9F488A20E9CF4400057A30 = {
+		2E117EBE20EC623200C07828 = {
 			isa = PBXGroup;
 			children = (
-				2E9F489520E9CF4400057A30 /* Tap App */,
-				2E9F489420E9CF4400057A30 /* Products */,
+				2E117EC920EC623300C07828 /* QuizApp */,
+				2E117EC820EC623300C07828 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2E9F489420E9CF4400057A30 /* Products */ = {
+		2E117EC820EC623300C07828 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E9F489320E9CF4400057A30 /* Tap App.app */,
+				2E117EC720EC623300C07828 /* QuizApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2E9F489520E9CF4400057A30 /* Tap App */ = {
+		2E117EC920EC623300C07828 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				2E9F489620E9CF4400057A30 /* AppDelegate.swift */,
-				2E9F489820E9CF4400057A30 /* ViewController.swift */,
-				2E9F489A20E9CF4400057A30 /* Main.storyboard */,
-				2E9F489D20E9CF4500057A30 /* Assets.xcassets */,
-				2E9F489F20E9CF4500057A30 /* LaunchScreen.storyboard */,
-				2E9F48A220E9CF4500057A30 /* Info.plist */,
-				2E9F48A820E9FEEE00057A30 /* victoryViewController.swift */,
-				2E1D913E20EB4448006F473D /* coin.mp3 */,
-				2E1D914220EB5D54006F473D /* click.mp3 */,
-				2E1D914020EB4CCD006F473D /* HomeViewController.swift */,
+				2E117ECA20EC623300C07828 /* AppDelegate.swift */,
+				2E117ECC20EC623300C07828 /* ViewController.swift */,
+				2E117ECE20EC623300C07828 /* Main.storyboard */,
+				2E117ED120EC623400C07828 /* Assets.xcassets */,
+				2E117ED320EC623400C07828 /* LaunchScreen.storyboard */,
+				2E117ED620EC623400C07828 /* Info.plist */,
 			);
-			path = "Tap App";
+			path = QuizApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2E9F489220E9CF4400057A30 /* Tap App */ = {
+		2E117EC620EC623200C07828 /* QuizApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E9F48A520E9CF4500057A30 /* Build configuration list for PBXNativeTarget "Tap App" */;
+			buildConfigurationList = 2E117ED920EC623400C07828 /* Build configuration list for PBXNativeTarget "QuizApp" */;
 			buildPhases = (
-				2E9F488F20E9CF4400057A30 /* Sources */,
-				2E9F489020E9CF4400057A30 /* Frameworks */,
-				2E9F489120E9CF4400057A30 /* Resources */,
+				2E117EC320EC623200C07828 /* Sources */,
+				2E117EC420EC623200C07828 /* Frameworks */,
+				2E117EC520EC623200C07828 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Tap App";
-			productName = "Tap App";
-			productReference = 2E9F489320E9CF4400057A30 /* Tap App.app */;
+			name = QuizApp;
+			productName = QuizApp;
+			productReference = 2E117EC720EC623300C07828 /* QuizApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2E9F488B20E9CF4400057A30 /* Project object */ = {
+		2E117EBF20EC623200C07828 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Pai Qu";
 				TargetAttributes = {
-					2E9F489220E9CF4400057A30 = {
+					2E117EC620EC623200C07828 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 2E9F488E20E9CF4400057A30 /* Build configuration list for PBXProject "Tap App" */;
+			buildConfigurationList = 2E117EC220EC623200C07828 /* Build configuration list for PBXProject "QuizApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,58 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 2E9F488A20E9CF4400057A30;
-			productRefGroup = 2E9F489420E9CF4400057A30 /* Products */;
+			mainGroup = 2E117EBE20EC623200C07828;
+			productRefGroup = 2E117EC820EC623300C07828 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E9F489220E9CF4400057A30 /* Tap App */,
+				2E117EC620EC623200C07828 /* QuizApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2E9F489120E9CF4400057A30 /* Resources */ = {
+		2E117EC520EC623200C07828 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9F48A120E9CF4500057A30 /* LaunchScreen.storyboard in Resources */,
-				2E1D914320EB5D54006F473D /* click.mp3 in Resources */,
-				2E9F489E20E9CF4500057A30 /* Assets.xcassets in Resources */,
-				2E9F489C20E9CF4400057A30 /* Main.storyboard in Resources */,
-				2E1D913F20EB4448006F473D /* coin.mp3 in Resources */,
+				2E117ED520EC623400C07828 /* LaunchScreen.storyboard in Resources */,
+				2E117ED220EC623400C07828 /* Assets.xcassets in Resources */,
+				2E117ED020EC623300C07828 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2E9F488F20E9CF4400057A30 /* Sources */ = {
+		2E117EC320EC623200C07828 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9F48A920E9FEEE00057A30 /* victoryViewController.swift in Sources */,
-				2E9F489920E9CF4400057A30 /* ViewController.swift in Sources */,
-				2E9F489720E9CF4400057A30 /* AppDelegate.swift in Sources */,
-				2E1D914120EB4CCD006F473D /* HomeViewController.swift in Sources */,
+				2E117ECD20EC623300C07828 /* ViewController.swift in Sources */,
+				2E117ECB20EC623300C07828 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2E9F489A20E9CF4400057A30 /* Main.storyboard */ = {
+		2E117ECE20EC623300C07828 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2E9F489B20E9CF4400057A30 /* Base */,
+				2E117ECF20EC623300C07828 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2E9F489F20E9CF4500057A30 /* LaunchScreen.storyboard */ = {
+		2E117ED320EC623400C07828 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2E9F48A020E9CF4500057A30 /* Base */,
+				2E117ED420EC623400C07828 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2E9F48A320E9CF4500057A30 /* Debug */ = {
+		2E117ED720EC623400C07828 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +222,7 @@
 			};
 			name = Debug;
 		};
-		2E9F48A420E9CF4500057A30 /* Release */ = {
+		2E117ED820EC623400C07828 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,36 +276,36 @@
 			};
 			name = Release;
 		};
-		2E9F48A620E9CF4500057A30 /* Debug */ = {
+		2E117EDA20EC623400C07828 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BF2WS5D6WV;
-				INFOPLIST_FILE = "Tap App/Info.plist";
+				INFOPLIST_FILE = QuizApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Pai.Tap-App";
+				PRODUCT_BUNDLE_IDENTIFIER = Pai.QuizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2E9F48A720E9CF4500057A30 /* Release */ = {
+		2E117EDB20EC623400C07828 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BF2WS5D6WV;
-				INFOPLIST_FILE = "Tap App/Info.plist";
+				INFOPLIST_FILE = QuizApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Pai.Tap-App";
+				PRODUCT_BUNDLE_IDENTIFIER = Pai.QuizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,25 +315,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E9F488E20E9CF4400057A30 /* Build configuration list for PBXProject "Tap App" */ = {
+		2E117EC220EC623200C07828 /* Build configuration list for PBXProject "QuizApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E9F48A320E9CF4500057A30 /* Debug */,
-				2E9F48A420E9CF4500057A30 /* Release */,
+				2E117ED720EC623400C07828 /* Debug */,
+				2E117ED820EC623400C07828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E9F48A520E9CF4500057A30 /* Build configuration list for PBXNativeTarget "Tap App" */ = {
+		2E117ED920EC623400C07828 /* Build configuration list for PBXNativeTarget "QuizApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E9F48A620E9CF4500057A30 /* Debug */,
-				2E9F48A720E9CF4500057A30 /* Release */,
+				2E117EDA20EC623400C07828 /* Debug */,
+				2E117EDB20EC623400C07828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2E9F488B20E9CF4400057A30 /* Project object */;
+	rootObject = 2E117EBF20EC623200C07828 /* Project object */;
 }

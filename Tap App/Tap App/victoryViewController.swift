@@ -10,19 +10,21 @@ import UIKit
 
 class victoryViewController: UIViewController {
 
-    
+    var sender: UIViewController!
     var player1win = false
     var player2win = false
     var winner = ""
+    var p: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         win.text = "Player " + winner + " win"
         if winner == "1" {
-            view.backgroundColor = .purple
+            win.text = p + " win"
+            //view.backgroundColor = .blue
         }
         if winner == "2"{
-            
+            win.text = p + " win"
             view.backgroundColor = .yellow
         }
         // Do any additional setup after loading the view.
@@ -39,16 +41,22 @@ class victoryViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func quitGame(_ sender: Any) {
+        dismiss(animated: false, completion: {
+            self.sender.dismiss(animated: false, completion: nil)
+        })
+        
+    }
+    
+  
     
     @IBOutlet weak var win: UILabel!
     /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     */
+   
+    
 
 }

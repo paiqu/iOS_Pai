@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ItJ-9C-2q7">
+                                <rect key="frame" x="20" y="547" width="335" height="42"/>
+                                <color key="backgroundColor" red="0.96215600359999998" green="0.97700877409999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="C++🙉"/>
+                                <connections>
+                                    <action selector="typeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qU6-sr-tuJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyi-Qn-6FF">
+                                <rect key="frame" x="20" y="448" width="335" height="42"/>
+                                <color key="backgroundColor" red="0.96215600359999998" green="0.97700877409999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                <size key="titleShadowOffset" width="0.0" height="-1"/>
+                                <state key="normal" title="Swift✌🏻">
+                                    <color key="titleShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="typeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J5f-6S-d6g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's the best programming language in the world?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfH-Nj-dm6">
+                                <rect key="frame" x="20" y="217" width="335" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knq-VZ-wYz">
+                                <rect key="frame" x="20" y="639" width="335" height="42"/>
+                                <color key="backgroundColor" red="0.96215600359999998" green="0.97700877409999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Python🐒"/>
+                                <connections>
+                                    <action selector="typeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVY-gY-QhP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Knq-VZ-wYz" firstAttribute="width" secondItem="ItJ-9C-2q7" secondAttribute="width" id="8XR-4i-DjE"/>
+                            <constraint firstItem="Knq-VZ-wYz" firstAttribute="centerX" secondItem="ItJ-9C-2q7" secondAttribute="centerX" id="9SC-uK-PNN"/>
+                            <constraint firstItem="gfH-Nj-dm6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="173" id="9lh-gb-KoM"/>
+                            <constraint firstItem="jyi-Qn-6FF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HnV-cw-3ba"/>
+                            <constraint firstItem="ItJ-9C-2q7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Iqt-B7-M9W"/>
+                            <constraint firstItem="jyi-Qn-6FF" firstAttribute="top" secondItem="gfH-Nj-dm6" secondAttribute="bottom" constant="190.33333333333337" id="KfA-Od-ENt"/>
+                            <constraint firstItem="Knq-VZ-wYz" firstAttribute="top" secondItem="ItJ-9C-2q7" secondAttribute="bottom" constant="50" id="WOg-T6-NQw"/>
+                            <constraint firstItem="gfH-Nj-dm6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="YlR-i9-iaK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ItJ-9C-2q7" secondAttribute="trailing" constant="20" id="eFC-eG-Dnv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jyi-Qn-6FF" secondAttribute="trailing" constant="20" id="ltF-gK-vaP"/>
+                            <constraint firstAttribute="trailing" secondItem="gfH-Nj-dm6" secondAttribute="trailing" constant="20" id="mN3-Tw-pJd"/>
+                            <constraint firstItem="ItJ-9C-2q7" firstAttribute="top" secondItem="jyi-Qn-6FF" secondAttribute="bottom" constant="57" id="mof-zK-VsC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Button1" destination="jyi-Qn-6FF" id="pQr-YD-WGA"/>
+                        <outlet property="Button2" destination="ItJ-9C-2q7" id="BWr-QA-u4j"/>
+                        <outlet property="Button3" destination="Knq-VZ-wYz" id="sgs-UW-rfF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
+        </scene>
+    </scenes>
+</document>
