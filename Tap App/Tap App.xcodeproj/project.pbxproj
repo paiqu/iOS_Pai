@@ -7,21 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E117EDD20EDB5E400C07828 /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E117EDC20EDB5E400C07828 /* LeaderBoardViewController.swift */; };
+		2E117EDF20EDD46700C07828 /* Array+shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E117EDE20EDD46700C07828 /* Array+shuffle.swift */; };
+		2E117EE520EDEFDF00C07828 /* MatchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E117EE420EDEFDF00C07828 /* MatchTableCell.swift */; };
 		2E1D913F20EB4448006F473D /* coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D913E20EB4448006F473D /* coin.mp3 */; };
 		2E1D914120EB4CCD006F473D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D914020EB4CCD006F473D /* HomeViewController.swift */; };
 		2E1D914320EB5D54006F473D /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D914220EB5D54006F473D /* click.mp3 */; };
+		2E5B476520EF0A0200FDCBEA /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5B476420EF0A0200FDCBEA /* AppData.swift */; };
 		2E9F489720E9CF4400057A30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F489620E9CF4400057A30 /* AppDelegate.swift */; };
 		2E9F489920E9CF4400057A30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F489820E9CF4400057A30 /* ViewController.swift */; };
 		2E9F489C20E9CF4400057A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F489A20E9CF4400057A30 /* Main.storyboard */; };
 		2E9F489E20E9CF4500057A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F489D20E9CF4500057A30 /* Assets.xcassets */; };
 		2E9F48A120E9CF4500057A30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F489F20E9CF4500057A30 /* LaunchScreen.storyboard */; };
 		2E9F48A920E9FEEE00057A30 /* victoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F48A820E9FEEE00057A30 /* victoryViewController.swift */; };
+		2EB6304B20F327840073C0FC /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6304A20F327840073C0FC /* KDCircularProgress.swift */; };
+		2EB6305120F3380B0073C0FC /* WinTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6305020F3380B0073C0FC /* WinTimeViewController.swift */; };
+		2EB6305320F3480E0073C0FC /* DoubleTextTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6305220F3480E0073C0FC /* DoubleTextTableCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E117EDC20EDB5E400C07828 /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
+		2E117EDE20EDD46700C07828 /* Array+shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+shuffle.swift"; sourceTree = "<group>"; };
+		2E117EE420EDEFDF00C07828 /* MatchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableCell.swift; sourceTree = "<group>"; };
 		2E1D913E20EB4448006F473D /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin.mp3; sourceTree = "<group>"; };
 		2E1D914020EB4CCD006F473D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2E1D914220EB5D54006F473D /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
+		2E5B476420EF0A0200FDCBEA /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		2E9F489320E9CF4400057A30 /* Tap App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E9F489620E9CF4400057A30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E9F489820E9CF4400057A30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +41,9 @@
 		2E9F48A020E9CF4500057A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E9F48A220E9CF4500057A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E9F48A820E9FEEE00057A30 /* victoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = victoryViewController.swift; sourceTree = "<group>"; };
+		2EB6304A20F327840073C0FC /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
+		2EB6305020F3380B0073C0FC /* WinTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinTimeViewController.swift; sourceTree = "<group>"; };
+		2EB6305220F3480E0073C0FC /* DoubleTextTableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTextTableCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +76,15 @@
 		2E9F489520E9CF4400057A30 /* Tap App */ = {
 			isa = PBXGroup;
 			children = (
+				2EB6305220F3480E0073C0FC /* DoubleTextTableCellTableViewCell.swift */,
+				2EB6304A20F327840073C0FC /* KDCircularProgress.swift */,
+				2E5B476420EF0A0200FDCBEA /* AppData.swift */,
+				2E117EDE20EDD46700C07828 /* Array+shuffle.swift */,
+				2E117EE420EDEFDF00C07828 /* MatchTableCell.swift */,
 				2E9F489620E9CF4400057A30 /* AppDelegate.swift */,
 				2E9F489820E9CF4400057A30 /* ViewController.swift */,
 				2E9F489A20E9CF4400057A30 /* Main.storyboard */,
+				2E117EDC20EDB5E400C07828 /* LeaderBoardViewController.swift */,
 				2E9F489D20E9CF4500057A30 /* Assets.xcassets */,
 				2E9F489F20E9CF4500057A30 /* LaunchScreen.storyboard */,
 				2E9F48A220E9CF4500057A30 /* Info.plist */,
@@ -72,6 +92,7 @@
 				2E1D913E20EB4448006F473D /* coin.mp3 */,
 				2E1D914220EB5D54006F473D /* click.mp3 */,
 				2E1D914020EB4CCD006F473D /* HomeViewController.swift */,
+				2EB6305020F3380B0073C0FC /* WinTimeViewController.swift */,
 			);
 			path = "Tap App";
 			sourceTree = "<group>";
@@ -149,10 +170,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB6304B20F327840073C0FC /* KDCircularProgress.swift in Sources */,
 				2E9F48A920E9FEEE00057A30 /* victoryViewController.swift in Sources */,
+				2E117EDF20EDD46700C07828 /* Array+shuffle.swift in Sources */,
+				2E117EE520EDEFDF00C07828 /* MatchTableCell.swift in Sources */,
+				2E5B476520EF0A0200FDCBEA /* AppData.swift in Sources */,
 				2E9F489920E9CF4400057A30 /* ViewController.swift in Sources */,
 				2E9F489720E9CF4400057A30 /* AppDelegate.swift in Sources */,
+				2EB6305320F3480E0073C0FC /* DoubleTextTableCellTableViewCell.swift in Sources */,
 				2E1D914120EB4CCD006F473D /* HomeViewController.swift in Sources */,
+				2EB6305120F3380B0073C0FC /* WinTimeViewController.swift in Sources */,
+				2E117EDD20EDB5E400C07828 /* LeaderBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

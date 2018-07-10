@@ -22,10 +22,33 @@ class victoryViewController: UIViewController {
         if winner == "1" {
             win.text = p + " win"
             //view.backgroundColor = .blue
+            buttonQuit.layer.borderColor = UIColor(red:255/255, green:255/255, blue:255/255, alpha: 1.0).cgColor
+            buttonQuit.layer.borderWidth = 1.0
+            buttonRestart.layer.borderColor = UIColor(red:255/255, green:255/255, blue:255/255, alpha: 1.0).cgColor
+            buttonRestart.layer.borderWidth = 1.0
+            //
+            saveWinnerName(name: p)
+            //
+            
+            
+            
         }
         if winner == "2"{
             win.text = p + " win"
             view.backgroundColor = .yellow
+            textWinner.textColor = .black
+            textVictory.textColor = .black
+            buttonQuit.setTitleColor(.black, for: .normal)
+            buttonRestart.setTitleColor(.black, for: .normal)
+            
+            buttonRestart.layer.borderColor = UIColor.black.cgColor
+            buttonRestart.layer.borderWidth = 1.0
+            
+            buttonQuit.layer.borderColor = UIColor.black.cgColor
+            buttonQuit.layer.borderWidth = 1.0
+            //
+            saveWinnerName(name: p)
+            //
         }
         // Do any additional setup after loading the view.
     }
@@ -38,10 +61,12 @@ class victoryViewController: UIViewController {
     
     
     @IBAction func restart1(_ sender: Any) {
+        
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func quitGame(_ sender: Any) {
+        
         dismiss(animated: false, completion: {
             self.sender.dismiss(animated: false, completion: nil)
         })
@@ -49,6 +74,10 @@ class victoryViewController: UIViewController {
     }
     
   
+    @IBOutlet weak var textVictory: UILabel!
+    @IBOutlet weak var textWinner: UILabel!
+    @IBOutlet weak var buttonRestart: UIButton!
+    @IBOutlet weak var buttonQuit: UIButton!
     
     @IBOutlet weak var win: UILabel!
     /*
