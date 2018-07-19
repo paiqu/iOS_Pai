@@ -15,6 +15,7 @@ class addTaskViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var quitButton: UIButton!
     @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var kbRemover: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,10 @@ class addTaskViewController: UIViewController {
     
         // Add WaveView
         self.view.addSubview(waterView)
+        
+        self.view.addSubview(kbRemover)
         self.view.addSubview(quitButton)
+        
         
         // Start wave
         waterView.start()
@@ -34,6 +38,8 @@ class addTaskViewController: UIViewController {
         let currentDate = NSDate()
         datePicker.minimumDate = currentDate as Date
         datePicker.date = currentDate as Date
+        
+        
     }
 
     override var preferredStatusBarStyle : UIStatusBarStyle {
@@ -56,35 +62,53 @@ class addTaskViewController: UIViewController {
 //        print(dateString)
         
         let name: String = nameText.text!
-        let currentDate = Date()
-        let finishDate: Date = datePicker.date
-        let item = info(name: name, dateBegin: currentDate, dateFinish: finishDate)
         
-        save2TaskList(obj: item)
-        taskList = getTaskList()
         
-        print(taskList)
+        if searchList(name: name, lst: taskList){
+            let alert = UIAlertController(title: "Sorry", message: "You have to add a different name.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok", style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+            
+        }else{
+            let currentDate = Date()
+            let finishDate: Date = datePicker.date
+            let item = info(name: name, dateBegin: currentDate, dateFinish: finishDate)
+            save2TaskList(obj: item)
+            taskList = getTaskList()
+            dismiss(animated: true, completion: nil)
+        }
+        
+//        print(taskList)
+        
 
-        
-        
-        
-        
-        
-        
         //notification
-        let notification = UNMutableNotificationContent()
-        notification.title = "Danger Will Robinson"
-        notification.subtitle = "Something This Way Comes"
-        notification.body = "I need to tell you something, but first read this."
+//        let notification = UNMutableNotificationContent()
+//        notification.title = "Danger Will Robinson"
+//        notification.subtitle = "Something This Way Comes"
+//        notification.body = "I need to tell you something, but first read this."
+//
+//        let notificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+//        let request = UNNotificationRequest(identifier: "notification1", content: notification, trigger: notificationTrigger)
+//
+//        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
         
-        let notificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        let request = UNNotificationRequest(identifier: "notification1", content: notification, trigger: notificationTrigger)
-        
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        //
+       
     }
     
+    @IBAction func removeKB(_ sender: Any) {
+        nameText.resignFirstResponder()
+    }
     
+    @IBAction func removeKBup(_ sender: Any) {
+        nameText.resignFirstResponder()
+    }
     
+    override func viewWillAppear(_ animated: Bool) {
+        taskList = getTaskList()
+    }
     
     /*    // MARK: - Navigation
 

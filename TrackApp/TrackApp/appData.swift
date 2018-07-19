@@ -9,9 +9,11 @@
 import Foundation
 
 struct info:Codable {
+    
     let name: String
     let dateBegin: Date
     let dateFinish: Date
+    
 }
 
 
@@ -35,4 +37,53 @@ func save2TaskList(obj: info){
 func clearInfo(){
     UserDefaults.standard.set([], forKey: "taskList")
 }
+
+func saveProgressValue(_ name: Double, key: String){
+    UserDefaults.standard.set(name, forKey: key)
+}
+
+func getProgressValue(_ key: String) -> Double{
+    return UserDefaults.standard.double(forKey: key)
+}
+
+func clearProgressValue(_ key: String){
+    print("running")
+    UserDefaults.standard.set(0.0, forKey: key)
+}
+
+func removeTaskList(index: Int){
+    var lst = getTaskList()
+    lst.remove(at: index)
+    UserDefaults.standard.set(try? PropertyListEncoder().encode(lst), forKey:"taskList")
+    
+}
+
+func searchList(name: String, lst: [info]) -> Bool{
+    for x in lst{
+        if x.name == name{
+            return true
+        }
+    }
+    return false
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
