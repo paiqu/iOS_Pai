@@ -23,6 +23,7 @@
 		2EB6304B20F327840073C0FC /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6304A20F327840073C0FC /* KDCircularProgress.swift */; };
 		2EB6305120F3380B0073C0FC /* WinTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6305020F3380B0073C0FC /* WinTimeViewController.swift */; };
 		2EB6305320F3480E0073C0FC /* DoubleTextTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6305220F3480E0073C0FC /* DoubleTextTableCellTableViewCell.swift */; };
+		2EC0004920F5AFD300AF5FB0 /* playerInfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC0004820F5AFD300AF5FB0 /* playerInfoPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		2EB6304A20F327840073C0FC /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 		2EB6305020F3380B0073C0FC /* WinTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinTimeViewController.swift; sourceTree = "<group>"; };
 		2EB6305220F3480E0073C0FC /* DoubleTextTableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTextTableCellTableViewCell.swift; sourceTree = "<group>"; };
+		2EC0004820F5AFD300AF5FB0 /* playerInfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playerInfoPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				2E1D914220EB5D54006F473D /* click.mp3 */,
 				2E1D914020EB4CCD006F473D /* HomeViewController.swift */,
 				2EB6305020F3380B0073C0FC /* WinTimeViewController.swift */,
+				2EC0004820F5AFD300AF5FB0 /* playerInfoPageViewController.swift */,
 			);
 			path = "Tap App";
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				2EB6304B20F327840073C0FC /* KDCircularProgress.swift in Sources */,
 				2E9F48A920E9FEEE00057A30 /* victoryViewController.swift in Sources */,
+				2EC0004920F5AFD300AF5FB0 /* playerInfoPageViewController.swift in Sources */,
 				2E117EDF20EDD46700C07828 /* Array+shuffle.swift in Sources */,
 				2E117EE520EDEFDF00C07828 /* MatchTableCell.swift in Sources */,
 				2E5B476520EF0A0200FDCBEA /* AppData.swift in Sources */,

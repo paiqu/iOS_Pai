@@ -16,11 +16,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var redButton: UIButton!
     @IBOutlet weak var orangeButton: UIButton!
     @IBOutlet weak var blueButton: UIButton!
+    @IBOutlet weak var scoreBoard: UILabel!
     
     var pattern: [Int] = []
     var buttons: [UIButton] = []
     var userSequence: [Int] = []
     var numberOfTaps = 0
+    var highScore = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,12 +36,13 @@ class ViewController: UIViewController {
             button.layer.shadowColor = UIColor.black.cgColor
             button.layer.shadowOpacity = 0.1
         }
-
+        self.scoreBoard.text = "\(highScore)"
         presentNextSequence()
     }
 
     func presentNextSequence() {
         numberOfTaps = numberOfTaps + 1
+        
         let newRandomNumber = Int(arc4random()) % buttons.count
         pattern.append(newRandomNumber)
         
@@ -49,7 +52,7 @@ class ViewController: UIViewController {
             showVictoryScreen()
             return
         }
-
+        
         for button in buttons {
             button.isUserInteractionEnabled = false
         }
@@ -78,7 +81,15 @@ class ViewController: UIViewController {
 
     }
 
-
+    func restartGame(){
+        pattern = []
+        userSequence = []
+        numberOfTaps = 0
+        currentScoreLabel.text = "Current Score: " + String(0)
+        
+        presentNextSequence()
+        
+    }
 
     @IBAction func tapButton(_ sender: UIButton) {
 
@@ -118,6 +129,7 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: "You won! 👑", message: "Wow, you have the memory of an elephant 🐘", preferredStyle: .alert)
 
         let okAction = UIAlertAction(title: "Yay!", style: .default, handler: nil)
+  
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }
@@ -125,7 +137,14 @@ class ViewController: UIViewController {
     func showDefeatScreen() {
         let alert = UIAlertController(title: "You lost.", message: "Sorry, try again!", preferredStyle: .alert)
 
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let okAction = UIAlertAction(title: "Restart", style: .default){_ in
+            if self.numberOfTaps > self.highScore {
+                self.highScore = self.numberOfTaps - 1
+                self.scoreBoard.text = "\(self.highScore)"
+            }
+            self.restartGame()
+            print("Restatatetat")
+        }
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }

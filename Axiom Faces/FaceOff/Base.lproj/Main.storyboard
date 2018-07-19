@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Face View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FaceViewController" customModule="Faces" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1n-5F-PtU">
+                                <rect key="frame" x="78" y="167" width="219" height="302"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="302" id="SGW-TH-zfM"/>
+                                    <constraint firstAttribute="width" constant="219" id="sRN-E3-nMt"/>
+                                </constraints>
+                            </sceneKitView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknown" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUq-6H-UCD">
+                                <rect key="frame" x="78" y="589" width="219" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="fjW-VX-vZv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.56862745100000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IUq-6H-UCD" firstAttribute="trailing" secondItem="C1n-5F-PtU" secondAttribute="trailing" id="3rs-VZ-cnc"/>
+                            <constraint firstItem="IUq-6H-UCD" firstAttribute="leading" secondItem="C1n-5F-PtU" secondAttribute="leading" id="HJK-qd-91N"/>
+                            <constraint firstItem="C1n-5F-PtU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="Nbu-Rc-nDZ"/>
+                            <constraint firstItem="C1n-5F-PtU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ruL-fO-lFW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IUq-6H-UCD" secondAttribute="bottom" constant="36" id="vNA-U6-PbH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="expressionLabel" destination="IUq-6H-UCD" id="XyX-i3-HOp"/>
+                        <outlet property="sceneView" destination="C1n-5F-PtU" id="GjN-ea-Hec"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42.399999999999999" y="172.90640394088672"/>
+        </scene>
+    </scenes>
+</document>

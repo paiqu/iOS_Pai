@@ -17,7 +17,7 @@ class WinTimeViewController: UIViewController, UITableViewDataSource, UITableVie
         winnerDict = listToDic(lst: winners)
         
         sortedList = winnerDict.sorted(by: {$1.value < $0.value} )
-       
+        
        
     }
     var keys = [String]()

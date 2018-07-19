@@ -12,6 +12,7 @@ class MatchTableCell: UITableViewCell {
 
     @IBOutlet weak var matchImage: UIImageView!
     
+    @IBOutlet weak var playerName: UILabel!
     @IBOutlet weak var matchIcon: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()

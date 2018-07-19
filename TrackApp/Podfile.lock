@@ -1,0 +1,24 @@
+PODS:
+  - LinearProgressBar (1.0.1)
+  - TCProgressBar (0.4)
+  - YXWaveView (0.5.0)
+
+DEPENDENCIES:
+  - LinearProgressBar
+  - TCProgressBar
+  - YXWaveView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LinearProgressBar
+    - TCProgressBar
+    - YXWaveView
+
+SPEC CHECKSUMS:
+  LinearProgressBar: f6a74dbabed229dbb1a7978089e2e4317a3a0ee0
+  TCProgressBar: 14bf8cce9d9a4dae2d82fe88b8e9c45709ebe55d
+  YXWaveView: 3570d7244b08effd077a5c63b0693aa44b7cd369
+
+PODFILE CHECKSUM: dde46213c250653bdcf7877bcb5ac84386e5522f
+
+COCOAPODS: 1.5.3

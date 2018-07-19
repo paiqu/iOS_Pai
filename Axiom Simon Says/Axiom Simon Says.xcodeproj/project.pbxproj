@@ -12,6 +12,8 @@
 		1D5EBD2120F46C11005A8D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D5EBD1F20F46C11005A8D4A /* Main.storyboard */; };
 		1D5EBD2320F46C11005A8D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5EBD2220F46C11005A8D4A /* Assets.xcassets */; };
 		1D5EBD2620F46C11005A8D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D5EBD2420F46C11005A8D4A /* LaunchScreen.storyboard */; };
+		2119E3BE09FEA299CC969FCF /* Pods_Axiom_Simon_Says.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BA118AB745AD30513A1643 /* Pods_Axiom_Simon_Says.framework */; };
+		2E7D05E720F4877A00F8D0A6 /* appData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D05E620F4877A00F8D0A6 /* appData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		1D5EBD2220F46C11005A8D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D5EBD2520F46C11005A8D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D5EBD2720F46C11005A8D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26CCD00038CCF6D8649A190E /* Pods-Axiom Simon Says.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axiom Simon Says.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Axiom Simon Says/Pods-Axiom Simon Says.debug.xcconfig"; sourceTree = "<group>"; };
+		2E7D05E620F4877A00F8D0A6 /* appData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appData.swift; sourceTree = "<group>"; };
+		34BA118AB745AD30513A1643 /* Pods_Axiom_Simon_Says.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Axiom_Simon_Says.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F61482479DDA6761D2BBE2 /* Pods-Axiom Simon Says.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axiom Simon Says.release.xcconfig"; path = "Pods/Target Support Files/Pods-Axiom Simon Says/Pods-Axiom Simon Says.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2119E3BE09FEA299CC969FCF /* Pods_Axiom_Simon_Says.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F0BBD6E3B1B1EF555DB76DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26CCD00038CCF6D8649A190E /* Pods-Axiom Simon Says.debug.xcconfig */,
+				B3F61482479DDA6761D2BBE2 /* Pods-Axiom Simon Says.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1D5EBD0F20F46C11005A8D4A = {
 			isa = PBXGroup;
 			children = (
 				1D5EBD1A20F46C11005A8D4A /* Axiom Simon Says */,
 				1D5EBD1920F46C11005A8D4A /* Products */,
+				0F0BBD6E3B1B1EF555DB76DB /* Pods */,
+				1F3AAA9C36D39BE772FA1BF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +72,7 @@
 		1D5EBD1A20F46C11005A8D4A /* Axiom Simon Says */ = {
 			isa = PBXGroup;
 			children = (
+				2E7D05E620F4877A00F8D0A6 /* appData.swift */,
 				1D5EBD1B20F46C11005A8D4A /* AppDelegate.swift */,
 				1D5EBD1D20F46C11005A8D4A /* ViewController.swift */,
 				1D5EBD1F20F46C11005A8D4A /* Main.storyboard */,
@@ -64,6 +83,14 @@
 			path = "Axiom Simon Says";
 			sourceTree = "<group>";
 		};
+		1F3AAA9C36D39BE772FA1BF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34BA118AB745AD30513A1643 /* Pods_Axiom_Simon_Says.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D5EBD2A20F46C11005A8D4A /* Build configuration list for PBXNativeTarget "Axiom Simon Says" */;
 			buildPhases = (
+				3988D823A9015A8BDD3506A9 /* [CP] Check Pods Manifest.lock */,
 				1D5EBD1420F46C11005A8D4A /* Sources */,
 				1D5EBD1520F46C11005A8D4A /* Frameworks */,
 				1D5EBD1620F46C11005A8D4A /* Resources */,
+				81AD201CFB18EF6DAF9D62E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3988D823A9015A8BDD3506A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Axiom Simon Says-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81AD201CFB18EF6DAF9D62E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Axiom Simon Says/Pods-Axiom Simon Says-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FLKAutoLayout/FLKAutoLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/ORStackView/ORStackView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLKAutoLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ORStackView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Axiom Simon Says/Pods-Axiom Simon Says-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D5EBD1420F46C11005A8D4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1D5EBD1E20F46C11005A8D4A /* ViewController.swift in Sources */,
+				2E7D05E720F4877A00F8D0A6 /* appData.swift in Sources */,
 				1D5EBD1C20F46C11005A8D4A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +353,7 @@
 		};
 		1D5EBD2B20F46C11005A8D4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26CCD00038CCF6D8649A190E /* Pods-Axiom Simon Says.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +372,7 @@
 		};
 		1D5EBD2C20F46C11005A8D4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F61482479DDA6761D2BBE2 /* Pods-Axiom Simon Says.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

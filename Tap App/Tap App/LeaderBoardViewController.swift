@@ -10,8 +10,12 @@ import UIKit
 
 class LeaderBoardViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
+    @IBOutlet weak var xButton: UIBarButtonItem!
+    @IBOutlet weak var clearButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     @IBOutlet weak var tableView: UITableView!
@@ -33,9 +37,9 @@ class LeaderBoardViewController: UIViewController, UITableViewDataSource, UITabl
         
         configureIcon(pic: cell.matchIcon)
         
-        cell.textLabel?.text = winners[indexPath.row]
+        cell.playerName.text = winners[indexPath.row]
         
-        if cell.textLabel?.text == "Pai"{
+        if cell.playerName.text == "Pai"{
             cell.matchImage.image = #imageLiteral(resourceName: "Pai")
         }
 
@@ -43,14 +47,17 @@ class LeaderBoardViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if winners[indexPath.row] == "Pai" {
-            let alert = UIAlertController(title: "You", message: "Win", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-                NSLog("The \"OK\" alert occured.")
-            }))
-            self.present(alert, animated: true, completion: nil)
-        }
-        print("tap cell \(indexPath.row)")
+        //
+        let cell = tableView.cellForRow(at: indexPath) as! MatchTableCell
+        
+        titleName = winners[indexPath.row]
+        
+        playerName = titleName
+        
+        playerImage = cell.matchImage.image!
+        
+        performSegue(withIdentifier: "next", sender: self)
+        
     }
     var animationShown : [Bool]?
 
@@ -76,7 +83,8 @@ class LeaderBoardViewController: UIViewController, UITableViewDataSource, UITabl
         var x: Double = 0.1
         for cell in tableView.visibleCells as! [MatchTableCell] {
             UIView.animate(withDuration: 0.3, delay: x , options: UIViewAnimationOptions.curveEaseInOut, animations: {
-                cell.textLabel?.alpha = 0
+//                cell.textLabel?.alpha = 0
+                cell.playerName.alpha = 0
                 cell.matchImage.superview?.alpha = 0
                 //self.cell.reloadData()
             }, completion: nil)
@@ -94,6 +102,21 @@ class LeaderBoardViewController: UIViewController, UITableViewDataSource, UITabl
         pic.layer.cornerRadius = 15/*pic.frame.size.height/2*/
         pic.clipsToBounds = true
     }
- 
+    
+    
+    
+    var titleName = ""
+    var playerName = ""
+    var playerImage: UIImage = UIImage()
+    
+    var numberOfWins = 0
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nxt = segue.destination as! playerInfoPageViewController
+        nxt.title = titleName
+        nxt.playerNameText = playerName
+        nxt.playerImage = playerImage
+        
+    }
+
 
 }
