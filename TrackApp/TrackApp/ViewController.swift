@@ -33,8 +33,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "match", for: indexPath) as! CustomTableViewCell
         let item = taskList[indexPath.row]
-        
         cell.taskName.text = item.name
+        
         cell.progressBar.value = CGFloat(getProgressValue(item.name))
         cell.progressBar.outlineWidth = 2
         let totalTime: Int = totalSecondsDiff(fromDate: item.dateBegin, toDate: item.dateFinish)
@@ -46,8 +46,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func updateCell(cell: CustomTableViewCell, item: info, time: Int){
+        
+        //
         let currentDate: Date = Date()
         let timeLeft: String = item.dateFinish.offsetFrom(date: currentDate)
+        
         
         cell.timeLeft.text = timeLeft
         cell.progressBar.value += CGFloat(1/Double(time))
@@ -59,11 +62,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             print("Deleted")
-            clearProgressValue(taskList[indexPath.row].name)
+//            clearProgressValue(taskList[indexPath.row].name)
             removeTaskList(index: indexPath.row)
             
             self.taskList.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            self.taskList = getTaskList()
+            print(taskList)
         }
     }
     
@@ -90,7 +95,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewWillAppear(_ animated: Bool) {
         taskList = getTaskList()
-        print(taskList)
         self.tableView.reloadData()
     }
     func initNotificationSetupCheck() {

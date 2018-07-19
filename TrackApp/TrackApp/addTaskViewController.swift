@@ -77,6 +77,7 @@ class addTaskViewController: UIViewController {
             let item = info(name: name, dateBegin: currentDate, dateFinish: finishDate)
             save2TaskList(obj: item)
             taskList = getTaskList()
+            print(taskList)
             dismiss(animated: true, completion: nil)
         }
         

@@ -48,13 +48,17 @@ func getProgressValue(_ key: String) -> Double{
 
 func clearProgressValue(_ key: String){
     print("running")
-    UserDefaults.standard.set(0.0, forKey: key)
+    UserDefaults.standard.set(0, forKey: key)
+    print("yeas")
+    print("changed to \(UserDefaults.standard.double(forKey: key))")
 }
 
 func removeTaskList(index: Int){
     var lst = getTaskList()
+    clearProgressValue(lst[index].name)
     lst.remove(at: index)
     UserDefaults.standard.set(try? PropertyListEncoder().encode(lst), forKey:"taskList")
+    print("ok")
     
 }
 
